@@ -1,0 +1,64 @@
+<html> 
+	<head>
+		<title>Shehbaz_Lab1</title>
+		<script language="JavaScript" type="text/JavaScript">
+
+		// prompt() method will display a dialog box that prompt user input//
+		var fullName = prompt("Full Name:", "No Name");
+		var address = prompt("Address:", "No Address");
+		var city = prompt("City:", "London");
+		var province = prompt("Province:", "Ontario");
+		var accountBalance = prompt("Account Balance:", "0.0")
+
+		accountBalance = parseInt(accountBalance)
+
+		var penalty = 0;
+		var afterpenalty = 0;
+
+		if (accountBalance < 1000 && accountBalance >=1){
+			penalty = accountBalance * 0.02
+			afterpenalty = accountBalance + penalty
+		}
+
+		if (accountBalance >= 1000){
+			penalty = accountBalance * 0.03
+			afterpenalty = accountBalance + penalty
+		}
+		
+		if (accountBalance == 0){
+			var zero = "Thank-You for your payment"
+		}
+		else {
+			var zero = " "
+		}
+
+		//document.write is a function use to used to display output of HTML pages//
+
+
+		document.write("Full Name: ",fullName);
+		document.write("<br>");
+
+		document.write("Address: ",address);
+		document.write("<br>");
+
+		document.write("City: ", city);
+		document.write("<br>");
+
+		document.write("Province: ", province);
+		document.write("<br>");
+
+		document.write("Account Balance: ",accountBalance,"$");
+		document.write("<br>");
+
+		document.write("Total Owing: ", afterpenalty,"$")
+		document.write("<br>");
+		document.write("<br>");
+
+		document.write(zero)
+
+
+		</script> 
+	</head>
+	<body>
+	</body> 
+</html>
